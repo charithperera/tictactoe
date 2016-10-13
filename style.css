@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  height: 100px;
+  height: 150px;
   color: white;
   text-align: center;
 }
@@ -22,7 +22,7 @@ main {
 }
 
 header div {
-  width: 25%;
+  width: 150px;
   height: 90%;
   display: inline-block;
   vertical-align: top;
@@ -36,7 +36,7 @@ dd, dt {
   display: inline-block;
   color: white;
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 ul {
@@ -54,6 +54,57 @@ button {
   color: white;
   border: none;
   font-size: 32px;
+  margin: 0 auto 30px auto;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  transform: scale(1.5);
+}
+
+select {
+  background-color: transparent;;
+  color: white;
+  border: none;
+  font-size:24px;
+}
+
+input[type=number],
+input[type=text] {
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+input,
+select {
+  transition: all 0.5s ease;
+}
+
+input:hover,
+select:hover {
+  transform: scale(1.5);
+}
+
+.player-one,
+.player-two {
+  text-align: center;
+  transition: color 1s ease;
+  width: 40%;
+  margin: 0 1%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 .start-btn {
@@ -69,8 +120,15 @@ button {
 }
 
 .config {
-  margin-top: 50px;
-  text-align: center;
+  /*margin-top: 20px;*/
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  background-color: rgb(63, 12, 12);
+  max-width: 350px;
+  height: 100%;
+  padding: 30px 30px;
 }
 
 .full-circle-one {
@@ -90,8 +148,8 @@ button {
 	height:85vw;
 	max-height:300px;
 	max-width:300px;
-  margin: auto;
-  margin-top: 1vw;
+  margin: 1vw auto 5vw auto;
+
 }
 
 .col {
@@ -105,16 +163,51 @@ button {
   text-align: center;
   vertical-align: text-middle;
   border-radius: 50%;
+  transition: all 0.5s ease;
 }
 
-.timer {
+.empty-circle:hover {
+  transform: scale(1.5);
+}
+
+.result {
   visibility: hidden;
+  transition: visibility 0.5s ease;
 }
 
 /**/
 
+/*MODAL*/
+
+#overlay {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+     background: rgba(12, 7, 7, 0.9);;
+}
+
+#overlay div {
+     width:500px;
+     margin: 300px auto;
+     background-color: transparent;
+     border:1px solid #000;
+     padding:15px;
+     text-align:center;
+     /*color: black;*/
+}
+
+#overlay button {
+  margin-bottom: 50px;
+  display: inline-block;
+}
 
 
-@media (min-width: 500px) {
+@media (min-width: 750px) {
+
 
 }

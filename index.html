@@ -8,15 +8,23 @@
   <title>Document</title>
 </head>
 <body>
+  <div id="overlay">
+    <div>
+        <button class="one-player-btn">1 Player</button>
+        <button class="two-player-btn">2 Player</button>
+    </div>
+  </div>
   <header>
     <div class="player-one">
       <h2 class="player-one-score">0</h2>
+      <h3 class="player-one-name-display"></h3>
     </div>
-    <div class="timer">
+    <!-- <div class="timer">
       <h2>2:34</h2>
-    </div>
+    </div> -->
     <div class="player-two">
       <h2 class="player-two-score">0</h2>
+      <h3 class="player-two-name-display"></h3>
     </div>
   </header>
   <main>
@@ -35,10 +43,16 @@
     </section> -->
     <section class="config">
       <dl>
-        <dt>Player One:</dt>
+        <dt>P1 Color:</dt>
         <dd><input class="player-one-colour" type="color"  value="#f14242" /></dd>
-        <dt>Player Two:</dt>
+        <dt>P2 Color:</dt>
         <dd><input class="player-two-colour" type="color"  value="#5b51bc" /></dd>
+        <dt>P1 Name:</dt>
+        <dd><input class="player-one-name" type="text"  value="Player 1"/></dd>
+        <dt>P2 Name:</dt>
+        <dd><input class="player-two-name" type="text"  value="Player 2"/></dd>
+        <dt>Max Score:</dt>
+        <dd><input class="max-score" type="number" value = "5" /></dd>
         <dt>Board Size:</dt>
         <dd>
           <select name="board-size" id="board-size">
@@ -53,16 +67,18 @@
           </select>
         </dd>
       </dl>
+      <button class="close-config">Close</button>
       <!-- <ul>
         <li><button class="reset-btn">Reset</button></li>
         <li><button class="start-btn">Start</button></li>
         <li><button class="next-btn">Next Round</button></li>
       </ul> -->
-      <div class="buttons">
-        <button class="reset-btn">Reset</button>
-        <button class="start-btn">Start</button>
-        <button class="next-btn">Next Round</button>
-      </div>
+    </section>
+    <section class="buttons">
+      <button class="reset-btn">Reset</button>
+      <button class="start-btn">Start</button>
+      <button class="next-btn">Next Round</button>
+      <button class="config-btn">Settings</button>
     </section>
     <section class="result">
       <h2 class="resultDisplay"></h2>
