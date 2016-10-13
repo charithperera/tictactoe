@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="player-one">
+      <h2 class="player-one-score">0</h2>
+    </div>
+    <div class="timer">
+      <h2>2:34</h2>
+    </div>
+    <div class="player-two">
+      <h2 class="player-two-score">0</h2>
+    </div>
+  </header>
+  <main>
+    <section class="board"></section>
+    <!-- <section class="game-info">
+      <div class="game-details">
+        <h2 class="timer">Timer</h2>
+        <button class="reset" type="button" name="button">Reset</button>
+      </div>
+      <div class="player-one-details">
+        <h2 class="player-one-score"></h2>
+      </div>
+      <div class="player-two-details">
+        <h2 class="player-two-score"></h2>
+      </div>
+    </section> -->
+    <section class="config">
+      <dl>
+        <dt>Player One:</dt>
+        <dd><input class="player-one-colour" type="color"  value="#f14242" /></dd>
+        <dt>Player Two:</dt>
+        <dd><input class="player-two-colour" type="color"  value="#5b51bc" /></dd>
+        <dt>Board Size:</dt>
+        <dd>
+          <select name="board-size" id="board-size">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </dd>
+      </dl>
+      <!-- <ul>
+        <li><button class="reset-btn">Reset</button></li>
+        <li><button class="start-btn">Start</button></li>
+        <li><button class="next-btn">Next Round</button></li>
+      </ul> -->
+      <div class="buttons">
+        <button class="reset-btn">Reset</button>
+        <button class="start-btn">Start</button>
+        <button class="next-btn">Next Round</button>
+      </div>
+    </section>
+    <section class="result">
+      <h2 class="resultDisplay"></h2>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

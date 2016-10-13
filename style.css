@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px Helvetica;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+}
+
+header div {
+  width: 25%;
+  height: 90%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+header h2 {
+  font-size: 36px;
+}
+
+dd, dt {
+  display: inline-block;
+  color: white;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 32px;
+}
+
+.start-btn {
+  color: red;
+}
+
+.reset-btn {
+  color: blue;
+}
+
+.next-btn {
+  color: yellow;
+}
+
+.config {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.full-circle-one {
+  background-color: #f14242;
+}
+
+.full-circle-two {
+  background-color: #5b51bc;
+}
+
+/*HARRYS RESPONSIVE GRID*/
+.board {
+  display: none;
+  min-width:75px;
+	min-height:75px;
+	width:85vw;
+	height:85vw;
+	max-height:300px;
+	max-width:300px;
+  margin: auto;
+  margin-top: 1vw;
+}
+
+.col {
+  width: 33.33333%;
+  height: 100%;
+}
+
+.empty-circle {
+  height: 33.3333%;
+  border: 3px solid white;
+  text-align: center;
+  vertical-align: text-middle;
+  border-radius: 50%;
+}
+
+.timer {
+  visibility: hidden;
+}
+
+/**/
+
+
+
+@media (min-width: 500px) {
+
+}
