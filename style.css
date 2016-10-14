@@ -63,6 +63,10 @@ button:hover {
   transform: scale(1.5);
 }
 
+.config-btn:hover {
+  transform: none;
+}
+
 select {
   background-color: transparent;;
   color: white;

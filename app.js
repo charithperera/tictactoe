@@ -20,7 +20,7 @@ var $maxScore = $(".max-score");
 var $onePlayerBtn = $(".one-player-btn");
 var $twoPlayerBtn = $(".two-player-btn");
 
-var board;
+var game;
 
 $onePlayerBtn.on("click", function() {
   game.setType("single");
@@ -32,13 +32,11 @@ $twoPlayerBtn.on("click", function() {
   hideModal();
 })
 
-
 $board.on("click", $('.empty-circle'), function(e) {
   if(game.isEnabled()) {
     playerChoice(e);
   }
 });
-
 
 $startBtn.on("click", function() {
   $closePanelBtn.click();
@@ -181,23 +179,6 @@ function handleNoWin() {
   $(".empty-circle").css("border-color", "white");
   $(".player-one").css("color", "white");
   $(".player-two").css("color", "white");
-}
-
-function buildBoard(size) {
-  board = {
-    rows: 0,
-    columns: 0,
-    display: [],
-  }
-  board.display = [];
-  board.size = size;
-  for (var i = 0; i < size; i++) {
-    var newRow = [];
-    for (var j = 0; j < size; j++) {
-      newRow.push("");
-    }
-    board.display.push(newRow);
-  }
 }
 
 function renderBoard() {
