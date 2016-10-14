@@ -252,17 +252,6 @@ function resetRound() {
   renderBoard();
 }
 
-function init(size) {
-  showModal();
-  game = Game(size);
-  game.buildBoard(size);
-  renderBoard()
-  $playerOneNameDisplay.text(game.playerOne().getName() || $playerOneName.val());
-  $playerTwoNameDisplay.text(game.playerTwo().getName() || $playerTwoName.val());
-  $resetBtn.css("display", "none");
-  $nextBtn.css("display", "none");
-}
-
 function showModal() {
   var overlay = document.getElementById("overlay");
   overlay.style.visibility = "visible";
@@ -270,7 +259,7 @@ function showModal() {
 
 function hideModal() {
   var overlay = document.getElementById("overlay");
-  overlay.style.visibility = "hidden"
+  overlay.style.visibility = "hidden";
 }
 
 function Player() {
@@ -609,22 +598,21 @@ function Game(size) {
            }
          }
        }
-
-       // console.log("Top: " + top);
-       // console.log("TopRight: " + topRight);
-       // console.log("Right: " + right);
-       // console.log("bottomRighat: " + bottomRight);
-       // console.log("bottom: " + bottom);
-       // console.log("bottomLeft: " + bottomLeft);
-       // console.log("left: " + left);
-       // console.log("topLeft: " + topLeft);
-       // console.log(availableChoices);
-
        var randomChoice = Math.floor(Math.random() * (availableChoices.length));
        return availableChoices[randomChoice];
    }
   }
+}
 
+function init(size) {
+  showModal();
+  game = Game(size);
+  game.buildBoard(size);
+  renderBoard()
+  $playerOneNameDisplay.text(game.playerOne().getName() || $playerOneName.val());
+  $playerTwoNameDisplay.text(game.playerTwo().getName() || $playerTwoName.val());
+  $resetBtn.css("display", "none");
+  $nextBtn.css("display", "none");
 }
 
 init();
