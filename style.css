@@ -192,22 +192,35 @@ select::-ms-expand {
 }
 
 #overlay div {
-     width:500px;
+     width:100%;
      margin: 300px auto;
      background-color: transparent;
      border:1px solid #000;
      padding:15px;
      text-align:center;
-     /*color: black;*/
 }
 
 #overlay button {
   margin-bottom: 50px;
-  display: inline-block;
+  display: block;
 }
 
 
 @media (min-width: 750px) {
+  #overlay div {
 
+  }
+
+  #overlay button {
+    display: inline-block;
+  }
+
+  .board {
+    margin-bottom: 15px;
+  }
+
+  .buttons button {
+    margin-bottom: 20px;
+  }
 
 }
