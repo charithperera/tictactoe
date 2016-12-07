@@ -1,4 +1,6 @@
-# TIC TAC TOE / CONNECT...nothing
+# TIC TAC TOE / CONNECT SOMETHING
+
+https://charithperera.github.io/tictactoe/
 
 ## Goal
 My goal was to make an expandable and scalable game of tic tac toe that could be cutomised at run time with different options. I wanted it to be colour based so it's easy to pick up and see exactly what's going on without too much thinking
